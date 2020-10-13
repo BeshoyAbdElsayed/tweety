@@ -6,7 +6,7 @@
         <li class="mb-2">
         <div class="flex items-center text-sm">
             <a href="#">
-                <img class="rounded-full mr-2" src="https://api.adorable.io/avatars/40/abott@adorable.png" alt="friend">
+                <img class="rounded-full mr-2" src="https://robohash.org/xzc?size=40x40&bgset=bg1" alt="friend">
             </a>
             John Doe
         </div>
