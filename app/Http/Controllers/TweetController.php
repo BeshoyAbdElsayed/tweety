@@ -4,10 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\Tweet;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
+
 
 class TweetController extends Controller
 {
+    public function index()
+    {
+        return view('home', [
+            'tweets' => Auth::user()->timeline()
+        ]);
+    }
+
     public function store()
     {
         $attributes = request()->validate([
