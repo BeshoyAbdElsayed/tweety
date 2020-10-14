@@ -1,14 +1,14 @@
-<h3 class="font-bold text-xl mb-4">Friends</h3>
+<h3 class="font-bold text-xl mb-4">Following</h3>
 
 <ul>
-    @foreach (range(1, 8) as $index)
+    @foreach (Auth::user()->follows as $user)
         
         <li class="mb-2">
         <div class="flex items-center text-sm">
             <a href="#">
-                <img class="rounded-full mr-2" src="https://robohash.org/xzc?size=40x40&bgset=bg1" alt="friend">
+                <img class="rounded-full mr-2" src="{{ $user->avatar }}" alt="friend">
             </a>
-            John Doe
+            {{ $user->name }}
         </div>
     </li>
     @endforeach
